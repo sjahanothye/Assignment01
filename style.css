@@ -1,3 +1,43 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --dark-navy: #0f172a;
+  --light-gray: #f8fafc;
+  --border-color: #e2e8f0;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --text-white: #ffffff;
+  --accent-purple: #a855f7;
+  --bg-purple-light: #faf5ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  background-color: var(--text-white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--dark-navy);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
 /*Navbar*/
 .navbar {
   background-color: var(--text-white);
@@ -44,3 +84,54 @@
 .btn-register:hover {
   background-color: var(--primary-hover);
 }
+/*Banner (Hero) Section Styling*/
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.82)), url('./assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--text-white);
+  text-align: center;
+  padding: 140px 24px;
+}
+
+.hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: var(--text-white);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-title em {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 40px;
+}
+
+.btn-register-hero {
+  background-color: var(--primary);
+  color: var(--text-white);
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.btn-register-hero:hover {
+  background-color: var(--primary-hover);
+}
+
